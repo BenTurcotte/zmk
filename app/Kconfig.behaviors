@@ -42,6 +42,10 @@ endchoice
 endif
 
 
+config ZMK_BEHAVIOR_MODDED_HOLD_TAP
+    bool "Enable modded hold-tap behavior"
+    default y
+
 config ZMK_BEHAVIOR_HOLD_TAP
     bool
     default y

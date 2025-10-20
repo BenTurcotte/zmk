@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: MIT
+compatible: "zmk,behavior-modded-hold-tap"
+include: base.yaml
+
+properties:
+  #binding-cells:
+    type: int
+    required: true
+    const: 3
+
+  tapping-term-ms:
+      type: int
+      default: 200
+      description: "Time in milliseconds to distinguish tap from hold."
+
+  quick-tap-ms:
+    type: int
+    default: 100
+    description: "Time threshold for quick tap behavior."
+
+  require-prior-idle-ms:
+    type: int
+    default: 150
+    description: "Time required for prior idle before tap is registered."
+
+  flavor:
+    type: string
+    enum:
+      - balanced
+      - hold-preferred
+      - tap-preferred
+    default: balanced
+    description: "Hold-tap flavor to determine tap/hold preference."
