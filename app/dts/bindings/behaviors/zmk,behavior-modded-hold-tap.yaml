@@ -2,7 +2,7 @@ compatible: "zmk,behavior-modded-hold-tap"
 include: base.yaml
 
 properties:
-  #binding-cells:
+  "#binding-cells":
     type: int
     required: true
     const: 3
