@@ -8,9 +8,9 @@ properties:
     const: 3
 
   tapping-term-ms:
-      type: int
-      default: 200
-      description: "Time in milliseconds to distinguish tap from hold."
+    type: int
+    default: 200
+    description: "Time in milliseconds to distinguish tap from hold."
 
   quick-tap-ms:
     type: int
